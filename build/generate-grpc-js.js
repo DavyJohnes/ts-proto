@@ -192,7 +192,7 @@ function generateClientConstructor(fileDesc, serviceDesc) {
         credentials: ${ChannelCredentials},
         options?: Partial<${ChannelOptions}>,
       ): ${serviceDesc.name}Client;
-      service: ${serviceDesc.name}Service;
+      service: typeof ${serviceDesc.name}Service;
     }
   `;
 }
